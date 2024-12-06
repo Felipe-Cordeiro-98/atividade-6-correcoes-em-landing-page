@@ -57,3 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// modal login
+function modalLogin() {
+    const modal = document.querySelector(".modal-login");
+    modal.classList.toggle("active");
+}
