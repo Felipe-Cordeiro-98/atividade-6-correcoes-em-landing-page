@@ -48,6 +48,12 @@ header {
 }
 /* Ao passar o mouse sobre a logo, ela gira 540 graus e aumenta 1.2x de tamanho, com uma transição suave de 0,5s. */
 
+#btn-hamburger {
+    display: none;
+    order: 3;
+    cursor: pointer;
+}
+
 .nav {
     display: flex;
     width: 100%;
@@ -407,3 +413,51 @@ header {
     max-height: 250px;
 }
 /* O iframe à direita do banner tem largura máxima de 450px e altura máxima de 250px. */
+
+@media (max-width: 1199px) {
+    .search:hover {
+        width: 200px;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 20px 0;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #btn-hamburger {
+        display: flex;
+    }
+
+    nav {
+        justify-content: flex-end;
+        width: 100%;
+        height: 100px;
+        background-color: #000000b4;
+        display: none;
+        order: 4;
+    }
+
+    nav.active {
+        display: flex;
+        position: absolute;
+        top: 75px;
+        left: 0;
+    }
+
+    nav ul {
+        width: 200px !important;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start !important;
+        padding: 10px 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+  /* Estilos para celulares */
+}
+

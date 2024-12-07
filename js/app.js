@@ -63,3 +63,12 @@ function modalLogin() {
     const modal = document.querySelector(".modal-login");
     modal.classList.toggle("active");
 }
+
+// btn-hamburger
+
+const btnMenu = document.getElementById("btn-hamburger");
+const nav = document.querySelector("nav");
+
+btnMenu.addEventListener("click", () => {
+    nav.classList.toggle("active");
+})
