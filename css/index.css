@@ -474,12 +474,9 @@ header {
     .swiper-button-prev {
         left: 90% !important;
     }
-}
 
-@media (max-width: 767px) {
-  
-}
-
-@media (max-width: 575px) {
-  
+    .left,
+    .right {
+        z-index: 1000;
+    }
 }
