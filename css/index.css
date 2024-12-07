@@ -455,9 +455,31 @@ header {
         padding: 10px 0;
     }
 
+    .title {
+        font-size: 3rem !important;
+    }
+
+    .trailer h2 {
+        font-size: 2rem !important;
+    }
+
+    .trailer iframe {
+        display: none;
+    }
+
+    .swiper-button-next {
+        right: 90% !important;
+    }
+
+    .swiper-button-prev {
+        left: 90% !important;
+    }
 }
 
 @media (max-width: 767px) {
-  /* Estilos para celulares */
+  
 }
 
+@media (max-width: 575px) {
+  
+}
